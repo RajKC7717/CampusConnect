@@ -16,7 +16,7 @@ class _MainShellState extends State<MainShell> with TickerProviderStateMixin {
   int _currentIndex = 0;
 
   // Keep all screens alive when switching tabs
-  final List<Widget> _screens = const [
+  final List<Widget> _screens = [
     HomeScreen(),
     RoommateScreen(),
     BrolxScreen(),
@@ -104,7 +104,7 @@ class _MainShellState extends State<MainShell> with TickerProviderStateMixin {
         color: Colors.white,
         boxShadow: [
           BoxShadow(
-            color: const Color(0xFF1A1A2E).withOpacity(0.08),
+            color: const Color(0xFF1A1A2E).withValues(alpha: 0.08),
             blurRadius: 24,
             offset: const Offset(0, -4),
           ),
@@ -210,7 +210,7 @@ class _NavItem extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
                 decoration: BoxDecoration(
                   color: _isActive
-                      ? accentColor.withOpacity(0.12)
+                      ? accentColor.withValues(alpha: 0.12)
                       : Colors.transparent,
                   borderRadius: BorderRadius.circular(12),
                 ),

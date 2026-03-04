@@ -108,10 +108,10 @@ class HomeScreen extends StatelessWidget {
                         padding: const EdgeInsets.symmetric(
                             horizontal: 10, vertical: 6),
                         decoration: BoxDecoration(
-                          color: const Color(0xFF00E096).withOpacity(0.12),
+                          color: const Color(0xFF00E096).withValues(alpha: 0.12),
                           borderRadius: BorderRadius.circular(8),
                           border: Border.all(
-                              color: const Color(0xFF00E096).withOpacity(0.3)),
+                              color: const Color(0xFF00E096).withValues(alpha: 0.3)),
                         ),
                         child: const Row(
                           mainAxisSize: MainAxisSize.min,
@@ -323,7 +323,7 @@ class _SectionHeader extends StatelessWidget {
             fontFamily: 'DM Sans',
             fontSize: 13,
             fontWeight: FontWeight.w500,
-            color: const Color(0xFF00D4FF).withOpacity(0.9),
+            color: const Color(0xFF00D4FF).withValues(alpha: 0.9),
           ),
         ),
       ],
@@ -357,7 +357,7 @@ class _QuickActionCard extends StatelessWidget {
             borderRadius: BorderRadius.circular(16),
             boxShadow: [
               BoxShadow(
-                color: const Color(0xFF1A1A2E).withOpacity(0.06),
+                color: const Color(0xFF1A1A2E).withValues(alpha: 0.06),
                 blurRadius: 12,
                 offset: const Offset(0, 3),
               ),
@@ -369,7 +369,7 @@ class _QuickActionCard extends StatelessWidget {
                 width: 40,
                 height: 40,
                 decoration: BoxDecoration(
-                  color: accent.withOpacity(0.12),
+                  color: accent.withValues(alpha: 0.12),
                   borderRadius: BorderRadius.circular(12),
                 ),
                 child: Center(
@@ -427,7 +427,7 @@ class _FeatureBannerCard extends StatelessWidget {
           borderRadius: BorderRadius.circular(20),
           boxShadow: [
             BoxShadow(
-              color: accentColor.withOpacity(0.15),
+              color: accentColor.withValues(alpha: 0.15),
               blurRadius: 20,
               offset: const Offset(0, 6),
             ),
@@ -440,10 +440,10 @@ class _FeatureBannerCard extends StatelessWidget {
               width: 56,
               height: 56,
               decoration: BoxDecoration(
-                color: accentColor.withOpacity(0.15),
+                color: accentColor.withValues(alpha: 0.15),
                 borderRadius: BorderRadius.circular(16),
                 border:
-                Border.all(color: accentColor.withOpacity(0.3), width: 1),
+                Border.all(color: accentColor.withValues(alpha: 0.3), width: 1),
               ),
               child: Center(
                 child: Text(emoji, style: const TextStyle(fontSize: 28)),
@@ -459,7 +459,7 @@ class _FeatureBannerCard extends StatelessWidget {
                     padding:
                     const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
                     decoration: BoxDecoration(
-                      color: accentColor.withOpacity(0.2),
+                      color: accentColor.withValues(alpha: 0.2),
                       borderRadius: BorderRadius.circular(6),
                     ),
                     child: Text(
@@ -500,7 +500,7 @@ class _FeatureBannerCard extends StatelessWidget {
             Icon(
               Icons.arrow_forward_ios_rounded,
               size: 14,
-              color: accentColor.withOpacity(0.7),
+              color: accentColor.withValues(alpha: 0.7),
             ),
           ],
         ),
@@ -535,7 +535,7 @@ class _BrolxPreviewCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
-            color: const Color(0xFF1A1A2E).withOpacity(0.06),
+            color: const Color(0xFF1A1A2E).withValues(alpha: 0.06),
             blurRadius: 12,
             offset: const Offset(0, 3),
           ),
@@ -585,7 +585,7 @@ class _BrolxPreviewCard extends StatelessWidget {
                 padding:
                 const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
                 decoration: BoxDecoration(
-                  color: conditionColor.withOpacity(0.1),
+                  color: conditionColor.withValues(alpha: 0.1),
                   borderRadius: BorderRadius.circular(6),
                 ),
                 child: Text(
@@ -629,7 +629,7 @@ class _ActivityItem extends StatelessWidget {
         borderRadius: BorderRadius.circular(14),
         boxShadow: [
           BoxShadow(
-            color: const Color(0xFF1A1A2E).withOpacity(0.05),
+            color: const Color(0xFF1A1A2E).withValues(alpha: 0.05),
             blurRadius: 10,
             offset: const Offset(0, 2),
           ),
@@ -641,7 +641,7 @@ class _ActivityItem extends StatelessWidget {
             width: 38,
             height: 38,
             decoration: BoxDecoration(
-              color: iconColor.withOpacity(0.1),
+              color: iconColor.withValues(alpha: 0.1),
               borderRadius: BorderRadius.circular(10),
             ),
             child: Icon(icon, size: 18, color: iconColor),

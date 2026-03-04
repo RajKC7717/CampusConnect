@@ -86,7 +86,7 @@ class _SplashScreenState extends State<SplashScreen>
                 shape: BoxShape.circle,
                 gradient: RadialGradient(
                   colors: [
-                    const Color(0xFF00D4FF).withOpacity(0.15),
+                    const Color(0xFF00D4FF).withValues(alpha: 0.15),
                     Colors.transparent,
                   ],
                 ),
@@ -103,7 +103,7 @@ class _SplashScreenState extends State<SplashScreen>
                 shape: BoxShape.circle,
                 gradient: RadialGradient(
                   colors: [
-                    const Color(0xFF0F3460).withOpacity(0.6),
+                    const Color(0xFF0F3460).withValues(alpha: 0.6),
                     Colors.transparent,
                   ],
                 ),
@@ -141,7 +141,7 @@ class _SplashScreenState extends State<SplashScreen>
                             ),
                             boxShadow: [
                               BoxShadow(
-                                color: const Color(0xFF00D4FF).withOpacity(0.4),
+                                color: const Color(0xFF00D4FF).withValues(alpha: 0.4),
                                 blurRadius: 32,
                                 offset: const Offset(0, 8),
                               ),
@@ -218,7 +218,7 @@ class _SplashScreenState extends State<SplashScreen>
                     child: CircularProgressIndicator(
                       strokeWidth: 2,
                       valueColor: AlwaysStoppedAnimation<Color>(
-                        const Color(0xFF00D4FF).withOpacity(0.6),
+                        const Color(0xFF00D4FF).withValues(alpha: 0.6),
                       ),
                     ),
                   ),
@@ -237,7 +237,7 @@ class _DotGridPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
-      ..color = const Color(0xFF00D4FF).withOpacity(0.06)
+      ..color = const Color(0xFF00D4FF).withValues(alpha: 0.06)
       ..style = PaintingStyle.fill;
 
     const spacing = 28.0;
